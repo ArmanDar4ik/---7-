@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Южный Мед-Облако | Киберпанк</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Киберпанк сетка -->
+    <div class="cyber-grid"></div>
+    
+    <!-- Парящие частицы -->
+    <div class="floating-particles" id="particles"></div>
+
+    <div class="container">
+        <div class="cyber-card">
+            <div class="header">
+                <div class="sync-header">
+                    Внедрение ЕМИС для клиник Юга России — получите демо-доступ
+                </div>
+                <div class="selling-header">
+                    Южный Мед-Облако: интеллектуальная медицинская платформа
+                </div>
+            </div>
+
+            <!-- Герой секция -->
+            <div class="hero-section">
+                <div class="cyber-interface">
+                    <div class="terminal-line">> Инициализация системы Южный_Мед_Облако_v2.0...</div>
+                    <div class="terminal-line">> Загрузка AI-модулей диагностики... [██████████] 100%</div>
+                    <div class="terminal-line">> Система готова к работе. Ожидание пользовательского ввода...</div>
+                </div>
+            </div>
+
+            <!-- Особенности -->
+            <div class="features-grid">
+                <div class="feature-card neon-border">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="feature-text">
+                        Нейросетевая диагностика с точностью 94.7%
+                    </div>
+                </div>
+                <div class="feature-card neon-border">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-text">
+                        Защита медицинских данных уровня HIPAA
+                    </div>
+                </div>
+                <div class="feature-card neon-border">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="feature-text">
+                        Облачная платформа с мгновенным доступом
+                    </div>
+                </div>
+            </div>
+
+            <!-- Гарантии -->
+            <div class="guarantees-section">
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div>Гарантия безопасности данных — 99.9% uptime</div>
+                </div>
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div>Техническая поддержка 24/7</div>
+                </div>
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>Бесплатное обучение персонала</div>
+                </div>
+            </div>
+
+            <!-- CTA секция -->
+            <div class="cta-section">
+                <div class="cta-title">Начните цифровую трансформацию</div>
+                <div class="cta-subtitle">Получите доступ ко всем функциям системы на 14 дней бесплатно</div>
+                
+                <!-- Обновленная форма -->
+                <div class="cyber-form">
+                    <form id="demoForm" onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <label class="form-label" for="name">ФИО *</label>
+                            <input type="text" class="form-input" id="name" name="name" required placeholder="Иванов Иван Иванович">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="position">Должность *</label>
+                            <input type="text" class="form-input" id="position" name="position" required placeholder="Главный врач">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="clinic">Медицинское учреждение *</label>
+                            <input type="text" class="form-input" id="clinic" name="clinic" required placeholder="ЧУЗ «КБ РЖД-Медицина»">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email *</label>
+                            <input type="email" class="form-input" id="email" name="email" required placeholder="ivanov@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Телефон *</label>
+                            <input type="tel" class="form-input" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                        </div>
+                        <button type="submit" class="submit-btn pulse">
+                            Получить демо-доступ на 14 дней
+                        </button>
+                    </form>
+                    <div style="text-align: center; margin-top: 20px; font-size: 12px; color: var(--text-secondary);">
+                        *Для руководителей медицинских учреждений Южного федерального округа
+                    </div>
+                </div>
+            </div>
+
+            <!-- Дополнительные материалы -->
+            <div class="links-section">
+                <div class="links-title">Дополнительные материалы</div>
+                <div class="link-buttons">
+                    <button class="link-btn neon-border" onclick="openCase()">
+                        Кейс внедрения в ЧУЗ «КБ РЖД-Медицина»
+                    </button>
+                    <button class="link-btn neon-border" onclick="openReviews()">
+                        Отзывы клиентов
+                    </button>
+                    <button class="link-btn neon-border" onclick="openDocs()">
+                        Техническая документация
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Аналитика -->
+    <div class="analytics-badge">
+        > Система мониторинга активна
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
