@@ -2,8 +2,6 @@
 
 ![Макет лабораторной работы 7](page/images/Макет%207%20лаба.png)
 
-# Лабораторная работа 7
-
 ## Введение
 Разработка современного landing page в стиле киберпанк для медицинской платформы.
 
@@ -20,7 +18,19 @@
 1. **GSAP (GreenSock Animation Platform) v3.12.2**
    - Плагин: ScrollTrigger
 
+Почему выбрана библиотека GSAP:
+Преимущества:
+
+    Высокая производительность - оптимизированная анимация с использованием requestAnimationFrame
+
+    Богатая функциональность - Timeline, ScrollTrigger, сложные последовательности
+
+    Кроссбраузерность - поддержка старых браузеров
+
+    Активное сообщество - регулярные обновления и поддержка
+
 ### Строка подключения:
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
