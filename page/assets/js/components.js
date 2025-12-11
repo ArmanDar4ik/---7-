@@ -16,7 +16,6 @@ export async function loadComponents() {
                 document.getElementById(component.id).innerHTML = html;
             }
         } catch (error) {
-            console.error(`Ошибка загрузки компонента ${component.file}:`, error);
         }
     }
 }
