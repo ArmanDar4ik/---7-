@@ -1,6 +1,7 @@
 ## Лабораторная работа 7
 
 ![Макет лабораторной работы 7](page/images/Макет%207%20лаба.png)
+!Скриншот подключений](page/images/gsap-connection.png)
 
 ## Введение
 Разработка страницы обманки в стиле киберпанк для медицинской платформы.
@@ -34,4 +35,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 ```
-!Скриншот подключений](page/images/gsap-connection.png)
